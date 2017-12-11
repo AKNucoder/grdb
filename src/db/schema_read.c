@@ -1,4 +1,5 @@
 #include <assert.h>
+#include <stdio.h>
 #if _DEBUG
 #include <stdio.h>
 #endif

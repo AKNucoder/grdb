@@ -146,6 +146,7 @@ cli_graph_update_tuples(schema_type_t st, int old_schema_size)
 	sprintf(s, "%s/%d/%d/%s",
 		grdbdir, gno, cno, (st == VERTEX ? "v" : "e"));
 	memset(s1, 0, BUFSIZE);
+	//first is root dir,
 	sprintf(s1, "%s/%d/%d/%s.tmp",
 		grdbdir, gno, cno, (st == VERTEX ? "v" : "e"));
 	if (rename(s, s1) < 0) {
